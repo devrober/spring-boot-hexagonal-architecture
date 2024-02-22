@@ -34,7 +34,7 @@ public class BookController {
 	}
 	
 	@GetMapping("/get/{id}") 
-	public BookDto getBookByID(@PathVariable long id) { 
+	public BookDto getBookByID(@PathVariable Long id) { 
 		return bookServicePort.getBookById(id);
 	}
 	
@@ -44,6 +44,6 @@ public class BookController {
 	}
 	
 	@DeleteMapping("/delete/{id}") 
-	public void deleteBookByID(@PathVariable long id) { bookServicePort.deleteBookById(id);
+	public void deleteBookByID(@PathVariable Long id) { bookServicePort.deleteBookById(id);
 	}
 }
